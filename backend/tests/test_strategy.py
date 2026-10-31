@@ -5,14 +5,18 @@ T1 产出验证：backend/config/recommendation.py
 """
 
 import os
+import sys
 import unittest
 from decimal import Decimal
+from pathlib import Path
 
 from backend.config.recommendation import (
     ConfigError,
     DEFAULT_WEIGHTS,
     get_weights,
 )
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 _ENV_VARS = [
     "CAMPUSBITE_WEIGHT_T",
@@ -1483,9 +1487,9 @@ class TestStartupValidation(unittest.TestCase):
             else:
                 env.pop(k, None)
         result = subprocess.run(
-            [".venv/Scripts/python.exe", "-c",
+            [sys.executable, "-c",
              "from backend.recommendation import recommend; print('IMPORT_OK')"],
-            capture_output=True, text=True, env=env, cwd="E:\\校园美食推荐助手",
+            capture_output=True, text=True, env=env, cwd=PROJECT_ROOT,
             timeout=15,
         )
         return result.returncode, result.stdout.strip(), result.stderr.strip()
