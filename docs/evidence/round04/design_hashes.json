@@ -1,0 +1,18 @@
+{
+  "02_系统总体设计.md": {
+    "before": "f8a89706f64d4ec1a075fcb8715dbf4c3e75ec2516266a0432394e6a28111611",
+    "after": "6a80a98ea88c5da974fb87276ac8ea9577828b9175f0cfee57ebb30bf5b16011"
+  },
+  "03_功能验收标准.md": {
+    "before": "080ad8b534ffb1afd17b3280f02813a119e1c3de2cb5aa6bb481a52ce94ec1e5",
+    "after": "6b932a6fb1f6bf9d2aaf25550a78c50c03d866d9f6d20326a571bc774e2fc7e0"
+  },
+  "04_开发迭代计划.md": {
+    "before": "516b5819a40d17e8417553d51037b9b9292dced2f697fdbfb379ce136fabb866",
+    "after": "aa9b9130162af8d6c3082576b022eb0bae66b4340ce48b63368e662e228463ae"
+  },
+  "05_数据模型设计.md": {
+    "before": "6610b119d7ee28453c392b63ecd568fa60195afc79b1fdb3e1f4bc5dda767253",
+    "after": "cd11aca65b9bc9f471d0754e4b77698ec7eaa382f760e2f605d174165f289d91"
+  }
+}

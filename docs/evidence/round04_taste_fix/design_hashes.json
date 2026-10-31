@@ -1,0 +1,14 @@
+{
+  "02_系统总体设计.md": {
+    "before": "6a80a98ea88c5da974fb87276ac8ea9577828b9175f0cfee57ebb30bf5b16011",
+    "after": "95d52fe8d785602d31cdf74e6f936cb11e6f6c1ac945b7849a6cd76366328160"
+  },
+  "03_功能验收标准.md": {
+    "before": "6b932a6fb1f6bf9d2aaf25550a78c50c03d866d9f6d20326a571bc774e2fc7e0",
+    "after": "dc435a92cfc46821d2c70fd3e8ae9fac6b074cf46eaee14cda4ccc8d9173bd2a"
+  },
+  "08_第四轮推荐算法与接口.md": {
+    "before": "34119309befed6bb8c665dec223d449d17416856959b5a053b23c5465b0771ba",
+    "after": "0091eb62427f62f8bf353227e7895bb9fa7cb9b87832a1390931144c91d455c0"
+  }
+}

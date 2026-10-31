@@ -1,0 +1,26 @@
+{
+  "01_需求分析.md": {
+    "before_sha256": "fc4d96bd60a41bfe20e76035f0bb50e41224edca53a71a84aa5d30f39b54ffdf",
+    "after_sha256": "7c2e10603d1dc8a88dc140f88b7820c6d5940c330535f454800e1fb1e7e2c8db"
+  },
+  "02_系统总体设计.md": {
+    "before_sha256": "99b68f2ca9b82db3a13703146a2636844d68dfa1c495d41f00f7867daad3fc1d",
+    "after_sha256": "f8a89706f64d4ec1a075fcb8715dbf4c3e75ec2516266a0432394e6a28111611"
+  },
+  "03_功能验收标准.md": {
+    "before_sha256": "2e7c4b76c5807f5719107944726d6df22d8b0244a8f026bfa2c190d6ca6eb542",
+    "after_sha256": "080ad8b534ffb1afd17b3280f02813a119e1c3de2cb5aa6bb481a52ce94ec1e5"
+  },
+  "04_开发迭代计划.md": {
+    "before_sha256": "ab24798671401d42fcb1ccf8c413657a0a677c19353aca9015ba5e5e85e58a68",
+    "after_sha256": "516b5819a40d17e8417553d51037b9b9292dced2f697fdbfb379ce136fabb866"
+  },
+  "05_数据模型设计.md": {
+    "before_sha256": "954e6fad82d6515fc49300376582702393cf9d2dd856d81a1b2b32c92d5cd75b",
+    "after_sha256": "6610b119d7ee28453c392b63ecd568fa60195afc79b1fdb3e1f4bc5dda767253"
+  },
+  "06_第二轮数据验证.md": {
+    "before_sha256": "265f7816bedca7a6d91488815324ca6c5b4c713d5a88fa4e455b1c7d0680e865",
+    "after_sha256": "c5d7a3a19b31d89358b27cfd90e69bc5b8eb0cca29ce88409e65cd4833c3a203"
+  }
+}

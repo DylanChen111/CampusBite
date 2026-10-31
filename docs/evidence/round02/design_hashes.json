@@ -1,0 +1,18 @@
+{
+  "01_需求分析.md": {
+    "before_sha256": "b4ed946e122ff342ee42583f7739d5a5f2da2e7216d4fcd07ceb207fe4ce9fe5",
+    "after_sha256": "fc4d96bd60a41bfe20e76035f0bb50e41224edca53a71a84aa5d30f39b54ffdf"
+  },
+  "02_系统总体设计.md": {
+    "before_sha256": "05422eebf9434498a657b6d84c3df5e11914dd8d9cce6a66c982dc85b0a9328c",
+    "after_sha256": "99b68f2ca9b82db3a13703146a2636844d68dfa1c495d41f00f7867daad3fc1d"
+  },
+  "03_功能验收标准.md": {
+    "before_sha256": "caa17fa4d24eb84dbb3f3f9288858a47ec74e42362f617a2d101d2f6862945d0",
+    "after_sha256": "2e7c4b76c5807f5719107944726d6df22d8b0244a8f026bfa2c190d6ca6eb542"
+  },
+  "04_开发迭代计划.md": {
+    "before_sha256": "b12c46f44664f862a2704cbd833a5e4d9b9ac62f42ffa7eaba57ad7d88001b91",
+    "after_sha256": "ab24798671401d42fcb1ccf8c413657a0a677c19353aca9015ba5e5e85e58a68"
+  }
+}

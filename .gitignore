@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local tooling / snapshots
+.tools/
+.merkle-snapshot.json
+
+# Database (never commit real data)
+backend/storage/*.sqlite3
+backend/storage/*.sqlite3-*
+*.sqlite3
+*.sqlite3-journal
+
+# Secrets / environment
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+id_rsa*
+
+# Node / frontend build
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/test-results/
+frontend/playwright-report/
+
+# CI / test artifacts and temp files
+ci-logs/
+summary.txt
+*.log
+*.tmp
+.coverage
+htmlcov/
+**/test-results/
+**/trace.zip
+**/video.webm
+
+# Personal submission archive (kept out of repo)
+202522080804+陈锐/
+202522080804+陈锐.zip

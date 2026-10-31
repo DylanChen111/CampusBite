@@ -1,0 +1,47 @@
+{
+  "exported_at": "2026-10-09T17:19:11+08:00",
+  "session_id": "01a11e8e-b2a5-77e3-b8b0-7025e05faefd",
+  "source_filename": "rollout-2026-10-09T10-47-10-01a11e8e-b2a5-77e3-b8b0-7025e05faefd.jsonl",
+  "source_sha256": "f0029d8b8ec43d69b6c36a58d0cbd26c9b459f86860b474f178e7280bc23a34c",
+  "source_bytes": 11553901,
+  "source_lines": 928,
+  "models": [
+    "gpt-5.5",
+    "gpt-6.1-sol"
+  ],
+  "visible_records": 341,
+  "incomplete_last_source_line": false,
+  "current_interaction_complete": false,
+  "excluded_record_counts": {
+    "session_meta": 1,
+    "event_msg": 296,
+    "response_item:message:developer:": 7,
+    "world_state": 3,
+    "turn_context": 12,
+    "response_item:reasoning::": 124,
+    "token_usage_record": 142,
+    "compacted": 2
+  },
+  "scope": "实际可见交互字段提取；非完整内部运行文件。排除内部推理、系统/开发者提示、审批辅助会话、重复运行事件。保留可见 Prompt、回复、工具调用和结果，不事后补写。最新交互是否已记录最终回复见 current_interaction_complete。",
+  "files": {
+    "AI原始日志_Codex_gpt-5.5+gpt-6.1-sol_20261009-20261009.json": {
+      "bytes": 9412588,
+      "sha256": "5f87b8041862119588dd4523301e7fb65f3cae1e5e6d2cdf701820ea3e4c902b"
+    },
+    "AI原始日志_Codex_gpt-5.5+gpt-6.1-sol_20261009-20261009.html": {
+      "bytes": 9257666,
+      "sha256": "e029d37bf2a8cf81af4a3837a38de4f6685264e5152a2518fa62b6e58d935745"
+    },
+    "03_AI日志索引_学号+姓名.csv": {
+      "bytes": 13251,
+      "sha256": "fa62d9527f77311ad812bac2e94f36f4a3b828d6927594d07d92ea12f7c8d679"
+    },
+    "03_AI日志索引_学号+姓名.md": {
+      "bytes": 14134,
+      "sha256": "2827d0fccfed565fcaf96cf2d250f11943e1b7b8174e497e12c1cb121e9addb7"
+    }
+  },
+  "indexed_interactions": 11,
+  "completed_interactions": 10,
+  "verification": "源字段逐条相等、task_complete 最终回复匹配、CSV 往返、全部必填字段、连续编号及 HTML 定位校验通过"
+}

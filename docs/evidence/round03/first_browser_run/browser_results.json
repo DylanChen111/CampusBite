@@ -1,0 +1,811 @@
+{
+  "config": {
+    "argv": [
+      "E:\\校园美食推荐助手\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "E:\\校园美食推荐助手\\frontend\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "E:\\校园美食推荐助手\\frontend\\playwright.config.js",
+    "rootDir": "E:/校园美食推荐助手/frontend/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/校园美食推荐助手/frontend/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "E:/校园美食推荐助手/frontend/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\校园美食推荐助手\\frontend\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "E:\\校园美食推荐助手\\frontend\\tests\\e2e",
+        "snapshotDir": "E:\\校园美食推荐助手\\frontend\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5173",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "launchOptions": {
+            "executablePath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
+          },
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "../docs/evidence/round03/browser_results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "pages.spec.js",
+      "file": "pages.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "首页加载数据库餐单并提供有效导航",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1429,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:16:32.917Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-9e4b4fa610af06039f9e",
+          "file": "pages.spec.js",
+          "line": 36,
+          "column": 1
+        },
+        {
+          "title": "首页搜索及探索空搜索实际生效",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1008,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:16:34.728Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-cba7b487b9c53012f88b",
+          "file": "pages.spec.js",
+          "line": 50,
+          "column": 1
+        },
+        {
+          "title": "预算和距离筛选生效并可重置",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1182,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:16:35.748Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-7d681f3a849d91b7bd57",
+          "file": "pages.spec.js",
+          "line": 60,
+          "column": 1
+        },
+        {
+          "title": "口味营业与预算距离组合筛选正确",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30868,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                        "column": 66,
+                        "line": 32
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('combobox', { name: '口味', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <input readonly value=\"\" type=\"text\" tabindex=\"0\" role=\"combobox\" aria-label=\"口味\" autocomplete=\"off\" spellcheck=\"false\" id=\"el-id-1341-25\" aria-expanded=\"false\" aria-haspopup=\"listbox\" class=\"el-select__input\" aria-activedescendant=\"\" aria-autocomplete=\"none\" aria-controls=\"el-id-1341-6\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"el-select__selected-item el-select__placeholder is-transparent\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"el-select__selected-item el-select__placeholder is-transparent\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"el-select__selected-item el-select__placeholder is-transparent\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\n\n  30 | }\n  31 | async function choose(page, label, option) {\n> 32 |   await page.getByRole('combobox', { name: label, exact: true }).click()\n     |                                                                  ^\n  33 |   await page.getByRole('option', { name: option, exact: true }).click()\n  34 | }\n  35 |\n    at choose (E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:32:66)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:78:9"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:16:36.942Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-口味营业与预算距离组合筛选正确\\test-failed-1.png"
+                    },
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-口味营业与预算距离组合筛选正确\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-口味营业与预算距离组合筛选正确\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "be617558c25566766473-3f5a093ad3a8f2c26f95",
+          "file": "pages.spec.js",
+          "line": 73,
+          "column": 1
+        },
+        {
+          "title": "评分排序与最低评分筛选生效",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30464,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                        "column": 66,
+                        "line": 32
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nBrowser logs:\n\n<launching> C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=C:\\Users\\31510\\AppData\\Local\\Temp\\playwright_chromiumdev_profile-1MbHt6 --remote-debugging-pipe --no-startup-window\n<launched> pid=238380\n[pid=238380][err] [238380:249004:1009/121709.924:ERROR:chrome\\browser\\importer\\edge_china_browsers\\edge_qqbrowser_importer_utils_win.cc:200] QQBrowser profile preference file doesn't exist\n[pid=238380] <gracefully close start>\nCall log:\n\u001b[2m  - waiting for getByRole('combobox', { name: '排序方式', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <input readonly value=\"\" type=\"text\" tabindex=\"0\" role=\"combobox\" aria-label=\"排序方式\" autocomplete=\"off\" spellcheck=\"false\" id=\"el-id-2247-30\" aria-expanded=\"false\" aria-haspopup=\"listbox\" class=\"el-select__input\" aria-activedescendant=\"\" aria-autocomplete=\"none\" aria-controls=\"el-id-2247-16\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"el-select__selected-item el-select__placeholder\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"el-select__selected-item el-select__placeholder\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"el-select__selected-item el-select__placeholder\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\n\n  30 | }\n  31 | async function choose(page, label, option) {\n> 32 |   await page.getByRole('combobox', { name: label, exact: true }).click()\n     |                                                                  ^\n  33 |   await page.getByRole('option', { name: option, exact: true }).click()\n  34 | }\n  35 |\n    at choose (E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:32:66)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:86:9"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:17:09.477Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-评分排序与最低评分筛选生效\\test-failed-1.png"
+                    },
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-评分排序与最低评分筛选生效\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-评分排序与最低评分筛选生效\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "be617558c25566766473-6c63c935ac9b66e9b9b4",
+          "file": "pages.spec.js",
+          "line": 83,
+          "column": 1
+        },
+        {
+          "title": "严格忌口排除明确可能和未知风险",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30540,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                        "column": 66,
+                        "line": 32
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nBrowser logs:\n\n<launching> C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=C:\\Users\\31510\\AppData\\Local\\Temp\\playwright_chromiumdev_profile-RI2Q8t --remote-debugging-pipe --no-startup-window\n<launched> pid=241400\n[pid=241400][err] [241400:248944:1009/121741.860:ERROR:chrome\\browser\\importer\\edge_china_browsers\\edge_qqbrowser_importer_utils_win.cc:200] QQBrowser profile preference file doesn't exist\n[pid=241400] <gracefully close start>\nCall log:\n\u001b[2m  - waiting for getByRole('combobox', { name: '严格忌口', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <input readonly value=\"\" type=\"text\" tabindex=\"0\" role=\"combobox\" aria-label=\"严格忌口\" autocomplete=\"off\" spellcheck=\"false\" id=\"el-id-3864-29\" aria-expanded=\"false\" aria-haspopup=\"listbox\" class=\"el-select__input\" aria-activedescendant=\"\" aria-autocomplete=\"none\" aria-controls=\"el-id-3864-14\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <span>选择不吃的食材</span> from <div class=\"el-select__selected-item el-select__placeholder is-transparent\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <span>选择不吃的食材</span> from <div class=\"el-select__selected-item el-select__placeholder is-transparent\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <span>选择不吃的食材</span> from <div class=\"el-select__selected-item el-select__placeholder is-transparent\">…</div> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\n\n  30 | }\n  31 | async function choose(page, label, option) {\n> 32 |   await page.getByRole('combobox', { name: label, exact: true }).click()\n     |                                                                  ^\n  33 |   await page.getByRole('option', { name: option, exact: true }).click()\n  34 | }\n  35 |\n    at choose (E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:32:66)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:96:9"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:17:41.358Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-严格忌口排除明确可能和未知风险\\test-failed-1.png"
+                    },
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-严格忌口排除明确可能和未知风险\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-严格忌口排除明确可能和未知风险\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "be617558c25566766473-53a563db6f9beb6644dd",
+          "file": "pages.spec.js",
+          "line": 93,
+          "column": 1
+        },
+        {
+          "title": "无结果显示友好提示并允许重置",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1041,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:18:13.566Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-3274df8ae4d97ffc16d2",
+          "file": "pages.spec.js",
+          "line": 103,
+          "column": 1
+        },
+        {
+          "title": "非法预算输入有提示且不崩溃",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1214,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:18:14.933Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-c5af5cb9510ec1774e48",
+          "file": "pages.spec.js",
+          "line": 111,
+          "column": 1
+        },
+        {
+          "title": "详情显示对应数据库记录及未知过敏原",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1056,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:18:16.159Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-5ab0b8692e429bd39970",
+          "file": "pages.spec.js",
+          "line": 123,
+          "column": 1
+        },
+        {
+          "title": "不存在的菜品显示友好页面",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 582,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:18:17.226Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbIkZhaWxlZCB0byBsb2FkIHJlc291cmNlOiB0aGUgc2VydmVyIHJlc3BvbmRlZCB3aXRoIGEgc3RhdHVzIG9mIDQwNCAoTm90IEZvdW5kKSJdLCJwYWdlRXJyb3JzIjpbXX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-47fd7db3474e321a4383",
+          "file": "pages.spec.js",
+          "line": 134,
+          "column": 1
+        },
+        {
+          "title": "API 失败提示且重试可恢复",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 988,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:18:17.819Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbIkZhaWxlZCB0byBsb2FkIHJlc291cmNlOiBuZXQ6OkVSUl9GQUlMRUQiXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-015e26cb983f02044892",
+          "file": "pages.spec.js",
+          "line": 140,
+          "column": 1
+        },
+        {
+          "title": "字段缺失显示占位与未知状态",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 713,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:18:18.819Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-107c6031793bf7f78edd",
+          "file": "pages.spec.js",
+          "line": 150,
+          "column": 1
+        },
+        {
+          "title": "数据加载中有可见状态",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2106,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:18:19.546Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-505843e5cbd56e3bd83d",
+          "file": "pages.spec.js",
+          "line": 160,
+          "column": 1
+        },
+        {
+          "title": "推荐页明确开发中且不调用推荐接口",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 747,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:18:21.664Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-b75ea4b5c6acf78979aa",
+          "file": "pages.spec.js",
+          "line": 170,
+          "column": 1
+        },
+        {
+          "title": "移动端四页不溢出且图片正常加载",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1984,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:18:22.421Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-982488a8ebcc0dc6c7bd",
+          "file": "pages.spec.js",
+          "line": 182,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-09T04:16:32.257Z",
+    "duration": 112686.185,
+    "expected": 12,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

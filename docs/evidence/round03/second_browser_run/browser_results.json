@@ -1,0 +1,718 @@
+{
+  "config": {
+    "argv": [
+      "E:\\校园美食推荐助手\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "E:\\校园美食推荐助手\\frontend\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "E:\\校园美食推荐助手\\frontend\\playwright.config.js",
+    "rootDir": "E:/校园美食推荐助手/frontend/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/校园美食推荐助手/frontend/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "E:/校园美食推荐助手/frontend/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\校园美食推荐助手\\frontend\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "E:\\校园美食推荐助手\\frontend\\tests\\e2e",
+        "snapshotDir": "E:\\校园美食推荐助手\\frontend\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5173",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "launchOptions": {
+            "executablePath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
+          },
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "../docs/evidence/round03/browser_results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "pages.spec.js",
+      "file": "pages.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "首页加载数据库餐单并提供有效导航",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1408,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:21:25.230Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-9e4b4fa610af06039f9e",
+          "file": "pages.spec.js",
+          "line": 38,
+          "column": 1
+        },
+        {
+          "title": "首页搜索及探索空搜索实际生效",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1022,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:21:26.979Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-cba7b487b9c53012f88b",
+          "file": "pages.spec.js",
+          "line": 52,
+          "column": 1
+        },
+        {
+          "title": "预算和距离筛选生效并可重置",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1135,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:21:28.013Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-7d681f3a849d91b7bd57",
+          "file": "pages.spec.js",
+          "line": 62,
+          "column": 1
+        },
+        {
+          "title": "口味营业与预算距离组合筛选正确",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1377,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:21:29.159Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-3f5a093ad3a8f2c26f95",
+          "file": "pages.spec.js",
+          "line": 75,
+          "column": 1
+        },
+        {
+          "title": "评分排序与最低评分筛选生效",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1986,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:21:30.548Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-6c63c935ac9b66e9b9b4",
+          "file": "pages.spec.js",
+          "line": 86,
+          "column": 1
+        },
+        {
+          "title": "严格忌口排除明确可能和未知风险",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2394,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:21:32.545Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-53a563db6f9beb6644dd",
+          "file": "pages.spec.js",
+          "line": 96,
+          "column": 1
+        },
+        {
+          "title": "无结果显示友好提示并允许重置",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 904,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:21:34.948Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-3274df8ae4d97ffc16d2",
+          "file": "pages.spec.js",
+          "line": 107,
+          "column": 1
+        },
+        {
+          "title": "非法预算输入有提示且不崩溃",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1114,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:21:35.861Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-c5af5cb9510ec1774e48",
+          "file": "pages.spec.js",
+          "line": 115,
+          "column": 1
+        },
+        {
+          "title": "详情显示对应数据库记录及未知过敏原",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1035,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:21:36.984Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-5ab0b8692e429bd39970",
+          "file": "pages.spec.js",
+          "line": 127,
+          "column": 1
+        },
+        {
+          "title": "不存在的菜品显示友好页面",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 577,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:21:38.029Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbIkZhaWxlZCB0byBsb2FkIHJlc291cmNlOiB0aGUgc2VydmVyIHJlc3BvbmRlZCB3aXRoIGEgc3RhdHVzIG9mIDQwNCAoTm90IEZvdW5kKSJdLCJwYWdlRXJyb3JzIjpbXX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-47fd7db3474e321a4383",
+          "file": "pages.spec.js",
+          "line": 138,
+          "column": 1
+        },
+        {
+          "title": "API 失败提示且重试可恢复",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 936,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:21:38.615Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbIkZhaWxlZCB0byBsb2FkIHJlc291cmNlOiBuZXQ6OkVSUl9GQUlMRUQiXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-015e26cb983f02044892",
+          "file": "pages.spec.js",
+          "line": 144,
+          "column": 1
+        },
+        {
+          "title": "字段缺失显示占位与未知状态",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 672,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:21:39.563Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-107c6031793bf7f78edd",
+          "file": "pages.spec.js",
+          "line": 154,
+          "column": 1
+        },
+        {
+          "title": "数据加载中有可见状态",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2078,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:21:40.244Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-505843e5cbd56e3bd83d",
+          "file": "pages.spec.js",
+          "line": 164,
+          "column": 1
+        },
+        {
+          "title": "推荐页明确开发中且不调用推荐接口",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 766,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:21:42.331Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-b75ea4b5c6acf78979aa",
+          "file": "pages.spec.js",
+          "line": 174,
+          "column": 1
+        },
+        {
+          "title": "移动端四页不溢出且图片正常加载",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2348,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T04:21:43.106Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be617558c25566766473-982488a8ebcc0dc6c7bd",
+          "file": "pages.spec.js",
+          "line": 186,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-09T04:21:24.614Z",
+    "duration": 21642.510000000002,
+    "expected": 15,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

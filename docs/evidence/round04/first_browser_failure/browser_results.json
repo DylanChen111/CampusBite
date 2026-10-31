@@ -1,0 +1,1913 @@
+{
+  "config": {
+    "argv": [
+      "E:\\校园美食推荐助手\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "E:\\校园美食推荐助手\\frontend\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "E:\\校园美食推荐助手\\frontend\\playwright.config.js",
+    "rootDir": "E:/校园美食推荐助手/frontend/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "E:/校园美食推荐助手/frontend/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "E:/校园美食推荐助手/frontend/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "E:\\校园美食推荐助手\\frontend\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "E:\\校园美食推荐助手\\frontend\\tests\\e2e",
+        "snapshotDir": "E:\\校园美食推荐助手\\frontend\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5174",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "launchOptions": {
+            "executablePath": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
+          },
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "E:\\校园美食推荐助手\\docs\\evidence\\round04/browser_results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "pages.spec.js",
+      "file": "pages.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "首页加载数据库餐单并提供有效导航",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6129,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('30 道模拟菜品，慢慢挑一餐喜欢的。')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('30 道模拟菜品，慢慢挑一餐喜欢的。') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('30 道模拟菜品，慢慢挑一餐喜欢的。')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('30 道模拟菜品，慢慢挑一餐喜欢的。')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('30 道模拟菜品，慢慢挑一餐喜欢的。') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('30 道模拟菜品，慢慢挑一餐喜欢的。')\u001b[22m\n\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:41:54",
+                    "location": {
+                      "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                      "column": 54,
+                      "line": 41
+                    },
+                    "snippet": "  39 |   await page.goto('/')\n  40 |   await expect(page.getByRole('heading', { name: '今天吃什么？' })).toBeVisible()\n> 41 |   await expect(page.getByText('30 道模拟菜品，慢慢挑一餐喜欢的。')).toBeVisible()\n     |                                                      ^\n  42 |   await expect(page.getByTestId('dish-card')).toHaveCount(8)\n  43 |   await expect(page.locator('.category-link')).toHaveCount(6)\n  44 |   await page.getByTestId('dish-card').last().scrollIntoViewIfNeeded()"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                        "column": 54,
+                        "line": 41
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('30 道模拟菜品，慢慢挑一餐喜欢的。')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('30 道模拟菜品，慢慢挑一餐喜欢的。') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('30 道模拟菜品，慢慢挑一餐喜欢的。')\u001b[22m\n\n\n  39 |   await page.goto('/')\n  40 |   await expect(page.getByRole('heading', { name: '今天吃什么？' })).toBeVisible()\n> 41 |   await expect(page.getByText('30 道模拟菜品，慢慢挑一餐喜欢的。')).toBeVisible()\n     |                                                      ^\n  42 |   await expect(page.getByTestId('dish-card')).toHaveCount(8)\n  43 |   await expect(page.locator('.category-link')).toHaveCount(6)\n  44 |   await page.getByTestId('dish-card').last().scrollIntoViewIfNeeded()\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:41:54"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T07:25:00.903Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-首页加载数据库餐单并提供有效导航\\test-failed-1.png"
+                    },
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-首页加载数据库餐单并提供有效导航\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-首页加载数据库餐单并提供有效导航\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                    "column": 54,
+                    "line": 41
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "be617558c25566766473-9e4b4fa610af06039f9e",
+          "file": "pages.spec.js",
+          "line": 38,
+          "column": 1
+        },
+        {
+          "title": "首页搜索及探索空搜索实际生效",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6122,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m6\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m6\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n    at checkIds (E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:28:47)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:56:9",
+                    "location": {
+                      "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                      "column": 47,
+                      "line": 28
+                    },
+                    "snippet": "  26 | }\n  27 | async function checkIds(page, expected) {\n> 28 |   await expect(page.getByTestId('dish-card')).toHaveCount(expected.length)\n     |                                               ^\n  29 |   expect(await cardIds(page)).toEqual(expected)\n  30 | }\n  31 | async function choose(page, label, option) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                        "column": 47,
+                        "line": 28
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m6\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n\n  26 | }\n  27 | async function checkIds(page, expected) {\n> 28 |   await expect(page.getByTestId('dish-card')).toHaveCount(expected.length)\n     |                                               ^\n  29 |   expect(await cardIds(page)).toEqual(expected)\n  30 | }\n  31 | async function choose(page, label, option) {\n    at checkIds (E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:28:47)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:56:9"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T07:25:08.745Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-首页搜索及探索空搜索实际生效\\test-failed-1.png"
+                    },
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-首页搜索及探索空搜索实际生效\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-首页搜索及探索空搜索实际生效\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                    "column": 47,
+                    "line": 28
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "be617558c25566766473-cba7b487b9c53012f88b",
+          "file": "pages.spec.js",
+          "line": 52,
+          "column": 1
+        },
+        {
+          "title": "预算和距离筛选生效并可重置",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5997,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m30\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m30\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n    at checkIds (E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:28:47)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:64:9",
+                    "location": {
+                      "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                      "column": 47,
+                      "line": 28
+                    },
+                    "snippet": "  26 | }\n  27 | async function checkIds(page, expected) {\n> 28 |   await expect(page.getByTestId('dish-card')).toHaveCount(expected.length)\n     |                                               ^\n  29 |   expect(await cardIds(page)).toEqual(expected)\n  30 | }\n  31 | async function choose(page, label, option) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                        "column": 47,
+                        "line": 28
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m30\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n\n  26 | }\n  27 | async function checkIds(page, expected) {\n> 28 |   await expect(page.getByTestId('dish-card')).toHaveCount(expected.length)\n     |                                               ^\n  29 |   expect(await cardIds(page)).toEqual(expected)\n  30 | }\n  31 | async function choose(page, label, option) {\n    at checkIds (E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:28:47)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:64:9"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T07:25:16.514Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-预算和距离筛选生效并可重置\\test-failed-1.png"
+                    },
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-预算和距离筛选生效并可重置\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-预算和距离筛选生效并可重置\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                    "column": 47,
+                    "line": 28
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "be617558c25566766473-7d681f3a849d91b7bd57",
+          "file": "pages.spec.js",
+          "line": 62,
+          "column": 1
+        },
+        {
+          "title": "口味营业与预算距离组合筛选正确",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5964,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m30\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m30\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n    at checkIds (E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:28:47)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:77:9",
+                    "location": {
+                      "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                      "column": 47,
+                      "line": 28
+                    },
+                    "snippet": "  26 | }\n  27 | async function checkIds(page, expected) {\n> 28 |   await expect(page.getByTestId('dish-card')).toHaveCount(expected.length)\n     |                                               ^\n  29 |   expect(await cardIds(page)).toEqual(expected)\n  30 | }\n  31 | async function choose(page, label, option) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                        "column": 47,
+                        "line": 28
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m30\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n\n  26 | }\n  27 | async function checkIds(page, expected) {\n> 28 |   await expect(page.getByTestId('dish-card')).toHaveCount(expected.length)\n     |                                               ^\n  29 |   expect(await cardIds(page)).toEqual(expected)\n  30 | }\n  31 | async function choose(page, label, option) {\n    at checkIds (E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:28:47)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:77:9"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T07:25:24.022Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-口味营业与预算距离组合筛选正确\\test-failed-1.png"
+                    },
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-口味营业与预算距离组合筛选正确\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-口味营业与预算距离组合筛选正确\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                    "column": 47,
+                    "line": 28
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "be617558c25566766473-3f5a093ad3a8f2c26f95",
+          "file": "pages.spec.js",
+          "line": 75,
+          "column": 1
+        },
+        {
+          "title": "评分排序与最低评分筛选生效",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6036,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m30\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m30\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n    at checkIds (E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:28:47)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:88:9",
+                    "location": {
+                      "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                      "column": 47,
+                      "line": 28
+                    },
+                    "snippet": "  26 | }\n  27 | async function checkIds(page, expected) {\n> 28 |   await expect(page.getByTestId('dish-card')).toHaveCount(expected.length)\n     |                                               ^\n  29 |   expect(await cardIds(page)).toEqual(expected)\n  30 | }\n  31 | async function choose(page, label, option) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                        "column": 47,
+                        "line": 28
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m30\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n\n  26 | }\n  27 | async function checkIds(page, expected) {\n> 28 |   await expect(page.getByTestId('dish-card')).toHaveCount(expected.length)\n     |                                               ^\n  29 |   expect(await cardIds(page)).toEqual(expected)\n  30 | }\n  31 | async function choose(page, label, option) {\n    at checkIds (E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:28:47)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:88:9"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T07:25:31.480Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-评分排序与最低评分筛选生效\\test-failed-1.png"
+                    },
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-评分排序与最低评分筛选生效\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-评分排序与最低评分筛选生效\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                    "column": 47,
+                    "line": 28
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "be617558c25566766473-6c63c935ac9b66e9b9b4",
+          "file": "pages.spec.js",
+          "line": 86,
+          "column": 1
+        },
+        {
+          "title": "清除单项口味筛选恢复完整列表",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5930,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m30\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m30\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n    at checkIds (E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:28:47)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:98:9",
+                    "location": {
+                      "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                      "column": 47,
+                      "line": 28
+                    },
+                    "snippet": "  26 | }\n  27 | async function checkIds(page, expected) {\n> 28 |   await expect(page.getByTestId('dish-card')).toHaveCount(expected.length)\n     |                                               ^\n  29 |   expect(await cardIds(page)).toEqual(expected)\n  30 | }\n  31 | async function choose(page, label, option) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                        "column": 47,
+                        "line": 28
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m30\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n\n  26 | }\n  27 | async function checkIds(page, expected) {\n> 28 |   await expect(page.getByTestId('dish-card')).toHaveCount(expected.length)\n     |                                               ^\n  29 |   expect(await cardIds(page)).toEqual(expected)\n  30 | }\n  31 | async function choose(page, label, option) {\n    at checkIds (E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:28:47)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:98:9"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T07:25:38.900Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-清除单项口味筛选恢复完整列表\\test-failed-1.png"
+                    },
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-清除单项口味筛选恢复完整列表\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-清除单项口味筛选恢复完整列表\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                    "column": 47,
+                    "line": 28
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "be617558c25566766473-a027b253d76b5115ee6d",
+          "file": "pages.spec.js",
+          "line": 96,
+          "column": 1
+        },
+        {
+          "title": "严格忌口排除明确可能和未知风险",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5933,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m30\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m30\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n    at checkIds (E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:28:47)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:109:9",
+                    "location": {
+                      "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                      "column": 47,
+                      "line": 28
+                    },
+                    "snippet": "  26 | }\n  27 | async function checkIds(page, expected) {\n> 28 |   await expect(page.getByTestId('dish-card')).toHaveCount(expected.length)\n     |                                               ^\n  29 |   expect(await cardIds(page)).toEqual(expected)\n  30 | }\n  31 | async function choose(page, label, option) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                        "column": 47,
+                        "line": 28
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m30\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n\n  26 | }\n  27 | async function checkIds(page, expected) {\n> 28 |   await expect(page.getByTestId('dish-card')).toHaveCount(expected.length)\n     |                                               ^\n  29 |   expect(await cardIds(page)).toEqual(expected)\n  30 | }\n  31 | async function choose(page, label, option) {\n    at checkIds (E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:28:47)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:109:9"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T07:25:46.249Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-严格忌口排除明确可能和未知风险\\test-failed-1.png"
+                    },
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-严格忌口排除明确可能和未知风险\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-严格忌口排除明确可能和未知风险\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                    "column": 47,
+                    "line": 28
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "be617558c25566766473-53a563db6f9beb6644dd",
+          "file": "pages.spec.js",
+          "line": 107,
+          "column": 1
+        },
+        {
+          "title": "无结果显示友好提示并允许重置",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5936,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: '暂无匹配结果' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { name: '暂无匹配结果' }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: '暂无匹配结果' })\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: '暂无匹配结果' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { name: '暂无匹配结果' }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: '暂无匹配结果' })\u001b[22m\n\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:120:63",
+                    "location": {
+                      "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                      "column": 63,
+                      "line": 120
+                    },
+                    "snippet": "  118 | test('无结果显示友好提示并允许重置', async ({ page }) => {\n  119 |   await page.goto('/explore?keyword=' + encodeURIComponent('不存在的菜品'))\n> 120 |   await expect(page.getByRole('heading', { name: '暂无匹配结果' })).toBeVisible()\n      |                                                               ^\n  121 |   await expect(page.getByTestId('result-count')).toHaveText('0 道菜品')\n  122 |   await page.getByRole('button', { name: '重置筛选', exact: true }).first().click()\n  123 |   await checkIds(page, await expectedIds(page))"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                        "column": 63,
+                        "line": 120
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: '暂无匹配结果' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { name: '暂无匹配结果' }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: '暂无匹配结果' })\u001b[22m\n\n\n  118 | test('无结果显示友好提示并允许重置', async ({ page }) => {\n  119 |   await page.goto('/explore?keyword=' + encodeURIComponent('不存在的菜品'))\n> 120 |   await expect(page.getByRole('heading', { name: '暂无匹配结果' })).toBeVisible()\n      |                                                               ^\n  121 |   await expect(page.getByTestId('result-count')).toHaveText('0 道菜品')\n  122 |   await page.getByRole('button', { name: '重置筛选', exact: true }).first().click()\n  123 |   await checkIds(page, await expectedIds(page))\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:120:63"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T07:25:53.660Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-无结果显示友好提示并允许重置\\test-failed-1.png"
+                    },
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-无结果显示友好提示并允许重置\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-无结果显示友好提示并允许重置\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                    "column": 63,
+                    "line": 120
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "be617558c25566766473-3274df8ae4d97ffc16d2",
+          "file": "pages.spec.js",
+          "line": 118,
+          "column": 1
+        },
+        {
+          "title": "非法预算输入有提示且不崩溃",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6007,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m30\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m30\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n    at checkIds (E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:28:47)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:128:9",
+                    "location": {
+                      "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                      "column": 47,
+                      "line": 28
+                    },
+                    "snippet": "  26 | }\n  27 | async function checkIds(page, expected) {\n> 28 |   await expect(page.getByTestId('dish-card')).toHaveCount(expected.length)\n     |                                               ^\n  29 |   expect(await cardIds(page)).toEqual(expected)\n  30 | }\n  31 | async function choose(page, label, option) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                        "column": 47,
+                        "line": 28
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m30\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n\n  26 | }\n  27 | async function checkIds(page, expected) {\n> 28 |   await expect(page.getByTestId('dish-card')).toHaveCount(expected.length)\n     |                                               ^\n  29 |   expect(await cardIds(page)).toEqual(expected)\n  30 | }\n  31 | async function choose(page, label, option) {\n    at checkIds (E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:28:47)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:128:9"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T07:26:01.110Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-非法预算输入有提示且不崩溃\\test-failed-1.png"
+                    },
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-非法预算输入有提示且不崩溃\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-非法预算输入有提示且不崩溃\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                    "column": 47,
+                    "line": 28
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "be617558c25566766473-c5af5cb9510ec1774e48",
+          "file": "pages.spec.js",
+          "line": 126,
+          "column": 1
+        },
+        {
+          "title": "详情显示对应数据库记录及未知过敏原",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5750,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: '宫保鸡丁饭', exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { name: '宫保鸡丁饭', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: '宫保鸡丁饭', exact: true })\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: '宫保鸡丁饭', exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { name: '宫保鸡丁饭', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: '宫保鸡丁饭', exact: true })\u001b[22m\n\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:140:75",
+                    "location": {
+                      "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                      "column": 75,
+                      "line": 140
+                    },
+                    "snippet": "  138 | test('详情显示对应数据库记录及未知过敏原', async ({ page }) => {\n  139 |   await page.goto('/dishes/1')\n> 140 |   await expect(page.getByRole('heading', { name: '宫保鸡丁饭', exact: true })).toBeVisible()\n      |                                                                           ^\n  141 |   await expect(page.locator('.detail-price')).toContainText('¥18')\n  142 |   for (const value of ['模拟川味窗口', '虚构校园 A 区一层', '10:30–14:00 / 16:30–20:00', '¥16', '花生']) await expect(page.locator('.detail-sections')).toContainText(value)\n  143 |   await page.screenshot({ path: screenshots + 'detail_desktop.png', fullPage: true })"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                        "column": 75,
+                        "line": 140
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: '宫保鸡丁饭', exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { name: '宫保鸡丁饭', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: '宫保鸡丁饭', exact: true })\u001b[22m\n\n\n  138 | test('详情显示对应数据库记录及未知过敏原', async ({ page }) => {\n  139 |   await page.goto('/dishes/1')\n> 140 |   await expect(page.getByRole('heading', { name: '宫保鸡丁饭', exact: true })).toBeVisible()\n      |                                                                           ^\n  141 |   await expect(page.locator('.detail-price')).toContainText('¥18')\n  142 |   for (const value of ['模拟川味窗口', '虚构校园 A 区一层', '10:30–14:00 / 16:30–20:00', '¥16', '花生']) await expect(page.locator('.detail-sections')).toContainText(value)\n  143 |   await page.screenshot({ path: screenshots + 'detail_desktop.png', fullPage: true })\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:140:75"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T07:26:08.605Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-详情显示对应数据库记录及未知过敏原\\test-failed-1.png"
+                    },
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-详情显示对应数据库记录及未知过敏原\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-详情显示对应数据库记录及未知过敏原\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                    "column": 75,
+                    "line": 140
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "be617558c25566766473-5ab0b8692e429bd39970",
+          "file": "pages.spec.js",
+          "line": 138,
+          "column": 1
+        },
+        {
+          "title": "不存在的菜品显示友好页面",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5822,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: '这道菜品不存在' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { name: '这道菜品不存在' }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: '这道菜品不存在' })\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: '这道菜品不存在' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { name: '这道菜品不存在' }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: '这道菜品不存在' })\u001b[22m\n\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:151:64",
+                    "location": {
+                      "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                      "column": 64,
+                      "line": 151
+                    },
+                    "snippet": "  149 | test('不存在的菜品显示友好页面', async ({ page }) => {\n  150 |   await page.goto('/dishes/999')\n> 151 |   await expect(page.getByRole('heading', { name: '这道菜品不存在' })).toBeVisible()\n      |                                                                ^\n  152 |   await expect(page.getByRole('link', { name: '探索其他美食' })).toBeVisible()\n  153 | })\n  154 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                        "column": 64,
+                        "line": 151
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: '这道菜品不存在' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('heading', { name: '这道菜品不存在' }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: '这道菜品不存在' })\u001b[22m\n\n\n  149 | test('不存在的菜品显示友好页面', async ({ page }) => {\n  150 |   await page.goto('/dishes/999')\n> 151 |   await expect(page.getByRole('heading', { name: '这道菜品不存在' })).toBeVisible()\n      |                                                                ^\n  152 |   await expect(page.getByRole('link', { name: '探索其他美食' })).toBeVisible()\n  153 | })\n  154 |\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:151:64"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T07:26:15.790Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-不存在的菜品显示友好页面\\test-failed-1.png"
+                    },
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-不存在的菜品显示友好页面\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-不存在的菜品显示友好页面\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                    "column": 64,
+                    "line": 151
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "be617558c25566766473-47fd7db3474e321a4383",
+          "file": "pages.spec.js",
+          "line": 149,
+          "column": 1
+        },
+        {
+          "title": "API 失败提示且重试可恢复",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6195,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m30\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m30\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n    at checkIds (E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:28:47)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:162:9",
+                    "location": {
+                      "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                      "column": 47,
+                      "line": 28
+                    },
+                    "snippet": "  26 | }\n  27 | async function checkIds(page, expected) {\n> 28 |   await expect(page.getByTestId('dish-card')).toHaveCount(expected.length)\n     |                                               ^\n  29 |   expect(await cardIds(page)).toEqual(expected)\n  30 | }\n  31 | async function choose(page, label, option) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                        "column": 47,
+                        "line": 28
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m30\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n\n  26 | }\n  27 | async function checkIds(page, expected) {\n> 28 |   await expect(page.getByTestId('dish-card')).toHaveCount(expected.length)\n     |                                               ^\n  29 |   expect(await cardIds(page)).toEqual(expected)\n  30 | }\n  31 | async function choose(page, label, option) {\n    at checkIds (E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:28:47)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:162:9"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T07:26:23.149Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-API-失败提示且重试可恢复\\test-failed-1.png"
+                    },
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-API-失败提示且重试可恢复\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-API-失败提示且重试可恢复\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                    "column": 47,
+                    "line": 28
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "be617558c25566766473-015e26cb983f02044892",
+          "file": "pages.spec.js",
+          "line": 155,
+          "column": 1
+        },
+        {
+          "title": "字段缺失显示占位与未知状态",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5855,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.detail-summary h1')\nExpected: \u001b[32m\"暂无数据\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.detail-summary h1') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.detail-summary h1')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.detail-summary h1')\nExpected: \u001b[32m\"暂无数据\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.detail-summary h1') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.detail-summary h1')\u001b[22m\n\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:168:52",
+                    "location": {
+                      "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                      "column": 52,
+                      "line": 168
+                    },
+                    "snippet": "  166 |   await page.route('**/api/dishes/1', route => route.fulfill({ json: { item: { id: 1 }, metadata: {} } }))\n  167 |   await page.goto('/dishes/1')\n> 168 |   await expect(page.locator('.detail-summary h1')).toHaveText('暂无数据')\n      |                                                    ^\n  169 |   await expect(page.locator('.detail-facts')).toContainText('营业状态未知')\n  170 |   await expect(page.locator('.detail-sections')).toContainText('未知，无法确认')\n  171 |   const body = await page.locator('body').innerText()"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                        "column": 52,
+                        "line": 168
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.detail-summary h1')\nExpected: \u001b[32m\"暂无数据\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.detail-summary h1') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.detail-summary h1')\u001b[22m\n\n\n  166 |   await page.route('**/api/dishes/1', route => route.fulfill({ json: { item: { id: 1 }, metadata: {} } }))\n  167 |   await page.goto('/dishes/1')\n> 168 |   await expect(page.locator('.detail-summary h1')).toHaveText('暂无数据')\n      |                                                    ^\n  169 |   await expect(page.locator('.detail-facts')).toContainText('营业状态未知')\n  170 |   await expect(page.locator('.detail-sections')).toContainText('未知，无法确认')\n  171 |   const body = await page.locator('body').innerText()\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:168:52"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T07:26:30.903Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-字段缺失显示占位与未知状态\\test-failed-1.png"
+                    },
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-字段缺失显示占位与未知状态\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-字段缺失显示占位与未知状态\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                    "column": 52,
+                    "line": 168
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "be617558c25566766473-107c6031793bf7f78edd",
+          "file": "pages.spec.js",
+          "line": 165,
+          "column": 1
+        },
+        {
+          "title": "列表字段缺失不导致卡片崩溃",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5942,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:178:47",
+                    "location": {
+                      "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                      "column": 47,
+                      "line": 178
+                    },
+                    "snippet": "  176 |   await page.route('**/api/dishes?*', route => route.fulfill({ json: { items: [{ id: 1 }], total: 1, options: {}, metadata: {} } }))\n  177 |   await page.goto('/explore')\n> 178 |   await expect(page.getByTestId('dish-card')).toHaveCount(1)\n      |                                               ^\n  179 |   await expect(page.getByTestId('dish-card')).toContainText('暂无数据')\n  180 |   await expect(page.getByTestId('dish-card')).toContainText('营业状态未知')\n  181 |   expect(await page.locator('body').innerText()).not.toMatch(/undefined|null/)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                        "column": 47,
+                        "line": 178
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('dish-card')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" getByTestId('dish-card') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n\n  176 |   await page.route('**/api/dishes?*', route => route.fulfill({ json: { items: [{ id: 1 }], total: 1, options: {}, metadata: {} } }))\n  177 |   await page.goto('/explore')\n> 178 |   await expect(page.getByTestId('dish-card')).toHaveCount(1)\n      |                                               ^\n  179 |   await expect(page.getByTestId('dish-card')).toContainText('暂无数据')\n  180 |   await expect(page.getByTestId('dish-card')).toContainText('营业状态未知')\n  181 |   expect(await page.locator('body').innerText()).not.toMatch(/undefined|null/)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:178:47"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T07:26:38.236Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-列表字段缺失不导致卡片崩溃\\test-failed-1.png"
+                    },
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-列表字段缺失不导致卡片崩溃\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-列表字段缺失不导致卡片崩溃\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                    "column": 47,
+                    "line": 178
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "be617558c25566766473-6ca0895f6ec3c8cf81f1",
+          "file": "pages.spec.js",
+          "line": 175,
+          "column": 1
+        },
+        {
+          "title": "数据加载中有可见状态",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6042,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('loading')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByTestId('loading') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('loading')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('loading')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByTestId('loading') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('loading')\u001b[22m\n\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:190:45",
+                    "location": {
+                      "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                      "column": 45,
+                      "line": 190
+                    },
+                    "snippet": "  188 |   })\n  189 |   await page.goto('/', { waitUntil: 'domcontentloaded' })\n> 190 |   await expect(page.getByTestId('loading')).toBeVisible()\n      |                                             ^\n  191 |   await expect(page.getByTestId('dish-card')).toHaveCount(8)\n  192 | })\n  193 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                        "column": 45,
+                        "line": 190
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('loading')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByTestId('loading') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('loading')\u001b[22m\n\n\n  188 |   })\n  189 |   await page.goto('/', { waitUntil: 'domcontentloaded' })\n> 190 |   await expect(page.getByTestId('loading')).toBeVisible()\n      |                                             ^\n  191 |   await expect(page.getByTestId('dish-card')).toHaveCount(8)\n  192 | })\n  193 |\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:190:45"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T07:26:45.709Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-数据加载中有可见状态\\test-failed-1.png"
+                    },
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-数据加载中有可见状态\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-数据加载中有可见状态\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                    "column": 45,
+                    "line": 190
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "be617558c25566766473-505843e5cbd56e3bd83d",
+          "file": "pages.spec.js",
+          "line": 184,
+          "column": 1
+        },
+        {
+          "title": "推荐页等待提交且默认返回五条真实结果",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5914,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '生成推荐', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '生成推荐', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '生成推荐', exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <button disabled type=\"button\" data-v-9cfd9dba=\"\" aria-disabled=\"true\" class=\"el-button el-button--primary is-disabled apply-button\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '生成推荐', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '生成推荐', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '生成推荐', exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <button disabled type=\"button\" data-v-9cfd9dba=\"\" aria-disabled=\"true\" class=\"el-button el-button--primary is-disabled apply-button\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:198:73",
+                    "location": {
+                      "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                      "column": 73,
+                      "line": 198
+                    },
+                    "snippet": "  196 |   page.on('request', request => { if (request.method() === 'POST') posts.push(request.url()) })\n  197 |   await page.goto('/recommend')\n> 198 |   await expect(page.getByRole('button', { name: '生成推荐', exact: true })).toBeEnabled()\n      |                                                                         ^\n  199 |   await page.getByRole('textbox', { name: '推荐预算' }).fill('20')\n  200 |   await expect(page.getByRole('heading', { name: '推荐结果', exact: true })).toBeVisible()\n  201 |   await expect(page.getByTestId('dish-card')).toHaveCount(0)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                        "column": 73,
+                        "line": 198
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '生成推荐', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '生成推荐', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '生成推荐', exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <button disabled type=\"button\" data-v-9cfd9dba=\"\" aria-disabled=\"true\" class=\"el-button el-button--primary is-disabled apply-button\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n\n  196 |   page.on('request', request => { if (request.method() === 'POST') posts.push(request.url()) })\n  197 |   await page.goto('/recommend')\n> 198 |   await expect(page.getByRole('button', { name: '生成推荐', exact: true })).toBeEnabled()\n      |                                                                         ^\n  199 |   await page.getByRole('textbox', { name: '推荐预算' }).fill('20')\n  200 |   await expect(page.getByRole('heading', { name: '推荐结果', exact: true })).toBeVisible()\n  201 |   await expect(page.getByTestId('dish-card')).toHaveCount(0)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:198:73"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T07:26:53.279Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-推荐页等待提交且默认返回五条真实结果\\test-failed-1.png"
+                    },
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-推荐页等待提交且默认返回五条真实结果\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-推荐页等待提交且默认返回五条真实结果\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                    "column": 73,
+                    "line": 198
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "be617558c25566766473-052671d5855d0223c123",
+          "file": "pages.spec.js",
+          "line": 194,
+          "column": 1
+        },
+        {
+          "title": "移动端四页不溢出且图片正常加载",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5857,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('dish-card').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByTestId('dish-card').first() with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card').first()\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('dish-card').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByTestId('dish-card').first() with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card').first()\u001b[22m\n\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:216:98",
+                    "location": {
+                      "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                      "column": 98,
+                      "line": 216
+                    },
+                    "snippet": "  214 |     await page.goto(path)\n  215 |     await expect(page.getByTestId('loading')).toHaveCount(0)\n> 216 |     if (path === '/' || path === '/explore') await expect(page.getByTestId('dish-card').first()).toBeVisible()\n      |                                                                                                  ^\n  217 |     if (path.startsWith('/dishes')) await expect(page.locator('.detail-summary h1')).toHaveText('宫保鸡丁饭')\n  218 |     const size = await page.evaluate(() => ({ width: innerWidth, scroll: document.documentElement.scrollWidth }))\n  219 |     expect(size.scroll).toBeLessThanOrEqual(size.width)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                        "column": 98,
+                        "line": 216
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('dish-card').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByTestId('dish-card').first() with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('dish-card').first()\u001b[22m\n\n\n  214 |     await page.goto(path)\n  215 |     await expect(page.getByTestId('loading')).toHaveCount(0)\n> 216 |     if (path === '/' || path === '/explore') await expect(page.getByTestId('dish-card').first()).toBeVisible()\n      |                                                                                                  ^\n  217 |     if (path.startsWith('/dishes')) await expect(page.locator('.detail-summary h1')).toHaveText('宫保鸡丁饭')\n  218 |     const size = await page.evaluate(() => ({ width: innerWidth, scroll: document.documentElement.scrollWidth }))\n  219 |     expect(size.scroll).toBeLessThanOrEqual(size.width)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js:216:98"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T07:27:00.555Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-移动端四页不溢出且图片正常加载\\test-failed-1.png"
+                    },
+                    {
+                      "name": "browser-console",
+                      "contentType": "application/json",
+                      "body": "eyJjb25zb2xlRXJyb3JzIjpbXSwicGFnZUVycm9ycyI6W119"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-移动端四页不溢出且图片正常加载\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\pages-移动端四页不溢出且图片正常加载\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\pages.spec.js",
+                    "column": 98,
+                    "line": 216
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "be617558c25566766473-982488a8ebcc0dc6c7bd",
+          "file": "pages.spec.js",
+          "line": 211,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "recommend.spec.js",
+      "file": "recommend.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "口味变化清除旧结果并更新实际排序",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 17,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6017,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '生成推荐', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '生成推荐', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '生成推荐', exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <button disabled type=\"button\" data-v-9cfd9dba=\"\" aria-disabled=\"true\" class=\"el-button el-button--primary is-disabled apply-button\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '生成推荐', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '生成推荐', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '生成推荐', exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <button disabled type=\"button\" data-v-9cfd9dba=\"\" aria-disabled=\"true\" class=\"el-button el-button--primary is-disabled apply-button\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js:12:73",
+                    "location": {
+                      "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js",
+                      "column": 73,
+                      "line": 12
+                    },
+                    "snippet": "  10 |   page.on('pageerror', error => { throw error })\n  11 |   await page.goto('/recommend')\n> 12 |   await expect(page.getByRole('button', { name: '生成推荐', exact: true })).toBeEnabled()\n     |                                                                         ^\n  13 | })\n  14 | test('口味变化清除旧结果并更新实际排序', async ({ page }) => {\n  15 |   await select(page, '推荐口味', '清淡'); await submit(page)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js",
+                        "column": 73,
+                        "line": 12
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '生成推荐', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '生成推荐', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '生成推荐', exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <button disabled type=\"button\" data-v-9cfd9dba=\"\" aria-disabled=\"true\" class=\"el-button el-button--primary is-disabled apply-button\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n\n  10 |   page.on('pageerror', error => { throw error })\n  11 |   await page.goto('/recommend')\n> 12 |   await expect(page.getByRole('button', { name: '生成推荐', exact: true })).toBeEnabled()\n     |                                                                         ^\n  13 | })\n  14 | test('口味变化清除旧结果并更新实际排序', async ({ page }) => {\n  15 |   await select(page, '推荐口味', '清淡'); await submit(page)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js:12:73"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T07:27:07.741Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\recommend-口味变化清除旧结果并更新实际排序\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\recommend-口味变化清除旧结果并更新实际排序\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\recommend-口味变化清除旧结果并更新实际排序\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js",
+                    "column": 73,
+                    "line": 12
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0fdee04e2674eafcfcd8-edf9dad5eb6d7c9946fd",
+          "file": "recommend.spec.js",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "预算距离营业忌口组合和Top3真正生效",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 18,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5968,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '生成推荐', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '生成推荐', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '生成推荐', exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <button disabled type=\"button\" data-v-9cfd9dba=\"\" aria-disabled=\"true\" class=\"el-button el-button--primary is-disabled apply-button\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '生成推荐', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '生成推荐', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '生成推荐', exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <button disabled type=\"button\" data-v-9cfd9dba=\"\" aria-disabled=\"true\" class=\"el-button el-button--primary is-disabled apply-button\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js:12:73",
+                    "location": {
+                      "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js",
+                      "column": 73,
+                      "line": 12
+                    },
+                    "snippet": "  10 |   page.on('pageerror', error => { throw error })\n  11 |   await page.goto('/recommend')\n> 12 |   await expect(page.getByRole('button', { name: '生成推荐', exact: true })).toBeEnabled()\n     |                                                                         ^\n  13 | })\n  14 | test('口味变化清除旧结果并更新实际排序', async ({ page }) => {\n  15 |   await select(page, '推荐口味', '清淡'); await submit(page)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js",
+                        "column": 73,
+                        "line": 12
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '生成推荐', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '生成推荐', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '生成推荐', exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <button disabled type=\"button\" data-v-9cfd9dba=\"\" aria-disabled=\"true\" class=\"el-button el-button--primary is-disabled apply-button\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n\n  10 |   page.on('pageerror', error => { throw error })\n  11 |   await page.goto('/recommend')\n> 12 |   await expect(page.getByRole('button', { name: '生成推荐', exact: true })).toBeEnabled()\n     |                                                                         ^\n  13 | })\n  14 | test('口味变化清除旧结果并更新实际排序', async ({ page }) => {\n  15 |   await select(page, '推荐口味', '清淡'); await submit(page)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js:12:73"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T07:27:15.345Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\recommend-预算距离营业忌口组合和Top3真正生效\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\recommend-预算距离营业忌口组合和Top3真正生效\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\recommend-预算距离营业忌口组合和Top3真正生效\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js",
+                    "column": 73,
+                    "line": 12
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0fdee04e2674eafcfcd8-411fb9a350d3f25a1de9",
+          "file": "recommend.spec.js",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "无结果非法输入与不足数量正常处理",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 19,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5922,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '生成推荐', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '生成推荐', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '生成推荐', exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <button disabled type=\"button\" data-v-9cfd9dba=\"\" aria-disabled=\"true\" class=\"el-button el-button--primary is-disabled apply-button\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '生成推荐', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '生成推荐', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '生成推荐', exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <button disabled type=\"button\" data-v-9cfd9dba=\"\" aria-disabled=\"true\" class=\"el-button el-button--primary is-disabled apply-button\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js:12:73",
+                    "location": {
+                      "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js",
+                      "column": 73,
+                      "line": 12
+                    },
+                    "snippet": "  10 |   page.on('pageerror', error => { throw error })\n  11 |   await page.goto('/recommend')\n> 12 |   await expect(page.getByRole('button', { name: '生成推荐', exact: true })).toBeEnabled()\n     |                                                                         ^\n  13 | })\n  14 | test('口味变化清除旧结果并更新实际排序', async ({ page }) => {\n  15 |   await select(page, '推荐口味', '清淡'); await submit(page)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js",
+                        "column": 73,
+                        "line": 12
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '生成推荐', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '生成推荐', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '生成推荐', exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <button disabled type=\"button\" data-v-9cfd9dba=\"\" aria-disabled=\"true\" class=\"el-button el-button--primary is-disabled apply-button\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n\n  10 |   page.on('pageerror', error => { throw error })\n  11 |   await page.goto('/recommend')\n> 12 |   await expect(page.getByRole('button', { name: '生成推荐', exact: true })).toBeEnabled()\n     |                                                                         ^\n  13 | })\n  14 | test('口味变化清除旧结果并更新实际排序', async ({ page }) => {\n  15 |   await select(page, '推荐口味', '清淡'); await submit(page)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js:12:73"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T07:27:22.867Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\recommend-无结果非法输入与不足数量正常处理\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\recommend-无结果非法输入与不足数量正常处理\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\recommend-无结果非法输入与不足数量正常处理\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js",
+                    "column": 73,
+                    "line": 12
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0fdee04e2674eafcfcd8-03fac8dfad7a80f72573",
+          "file": "recommend.spec.js",
+          "line": 39,
+          "column": 1
+        },
+        {
+          "title": "推荐API失败可恢复且加载状态可见",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 20,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5914,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '生成推荐', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '生成推荐', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '生成推荐', exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <button disabled type=\"button\" data-v-9cfd9dba=\"\" aria-disabled=\"true\" class=\"el-button el-button--primary is-disabled apply-button\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '生成推荐', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '生成推荐', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '生成推荐', exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <button disabled type=\"button\" data-v-9cfd9dba=\"\" aria-disabled=\"true\" class=\"el-button el-button--primary is-disabled apply-button\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js:12:73",
+                    "location": {
+                      "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js",
+                      "column": 73,
+                      "line": 12
+                    },
+                    "snippet": "  10 |   page.on('pageerror', error => { throw error })\n  11 |   await page.goto('/recommend')\n> 12 |   await expect(page.getByRole('button', { name: '生成推荐', exact: true })).toBeEnabled()\n     |                                                                         ^\n  13 | })\n  14 | test('口味变化清除旧结果并更新实际排序', async ({ page }) => {\n  15 |   await select(page, '推荐口味', '清淡'); await submit(page)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js",
+                        "column": 73,
+                        "line": 12
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '生成推荐', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '生成推荐', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '生成推荐', exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <button disabled type=\"button\" data-v-9cfd9dba=\"\" aria-disabled=\"true\" class=\"el-button el-button--primary is-disabled apply-button\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n\n  10 |   page.on('pageerror', error => { throw error })\n  11 |   await page.goto('/recommend')\n> 12 |   await expect(page.getByRole('button', { name: '生成推荐', exact: true })).toBeEnabled()\n     |                                                                         ^\n  13 | })\n  14 | test('口味变化清除旧结果并更新实际排序', async ({ page }) => {\n  15 |   await select(page, '推荐口味', '清淡'); await submit(page)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js:12:73"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T07:27:30.375Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\recommend-推荐API失败可恢复且加载状态可见\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\recommend-推荐API失败可恢复且加载状态可见\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\recommend-推荐API失败可恢复且加载状态可见\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js",
+                    "column": 73,
+                    "line": 12
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0fdee04e2674eafcfcd8-852660aed37a05baf8b4",
+          "file": "recommend.spec.js",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "缺失推荐字段友好提示而非崩溃",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 21,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5907,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '生成推荐', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '生成推荐', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '生成推荐', exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <button disabled type=\"button\" data-v-9cfd9dba=\"\" aria-disabled=\"true\" class=\"el-button el-button--primary is-disabled apply-button\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '生成推荐', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '生成推荐', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '生成推荐', exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <button disabled type=\"button\" data-v-9cfd9dba=\"\" aria-disabled=\"true\" class=\"el-button el-button--primary is-disabled apply-button\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js:12:73",
+                    "location": {
+                      "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js",
+                      "column": 73,
+                      "line": 12
+                    },
+                    "snippet": "  10 |   page.on('pageerror', error => { throw error })\n  11 |   await page.goto('/recommend')\n> 12 |   await expect(page.getByRole('button', { name: '生成推荐', exact: true })).toBeEnabled()\n     |                                                                         ^\n  13 | })\n  14 | test('口味变化清除旧结果并更新实际排序', async ({ page }) => {\n  15 |   await select(page, '推荐口味', '清淡'); await submit(page)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js",
+                        "column": 73,
+                        "line": 12
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '生成推荐', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '生成推荐', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '生成推荐', exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <button disabled type=\"button\" data-v-9cfd9dba=\"\" aria-disabled=\"true\" class=\"el-button el-button--primary is-disabled apply-button\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n\n  10 |   page.on('pageerror', error => { throw error })\n  11 |   await page.goto('/recommend')\n> 12 |   await expect(page.getByRole('button', { name: '生成推荐', exact: true })).toBeEnabled()\n     |                                                                         ^\n  13 | })\n  14 | test('口味变化清除旧结果并更新实际排序', async ({ page }) => {\n  15 |   await select(page, '推荐口味', '清淡'); await submit(page)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js:12:73"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T07:27:37.819Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\recommend-缺失推荐字段友好提示而非崩溃\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\recommend-缺失推荐字段友好提示而非崩溃\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\recommend-缺失推荐字段友好提示而非崩溃\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js",
+                    "column": 73,
+                    "line": 12
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0fdee04e2674eafcfcd8-ca5e1b8d2c1009c95056",
+          "file": "recommend.spec.js",
+          "line": 56,
+          "column": 1
+        },
+        {
+          "title": "推荐结果移动视口无横向溢出",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 22,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5939,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '生成推荐', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '生成推荐', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '生成推荐', exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <button disabled type=\"button\" data-v-9cfd9dba=\"\" aria-disabled=\"true\" class=\"el-button el-button--primary is-disabled apply-button\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '生成推荐', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '生成推荐', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '生成推荐', exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <button disabled type=\"button\" data-v-9cfd9dba=\"\" aria-disabled=\"true\" class=\"el-button el-button--primary is-disabled apply-button\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js:12:73",
+                    "location": {
+                      "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js",
+                      "column": 73,
+                      "line": 12
+                    },
+                    "snippet": "  10 |   page.on('pageerror', error => { throw error })\n  11 |   await page.goto('/recommend')\n> 12 |   await expect(page.getByRole('button', { name: '生成推荐', exact: true })).toBeEnabled()\n     |                                                                         ^\n  13 | })\n  14 | test('口味变化清除旧结果并更新实际排序', async ({ page }) => {\n  15 |   await select(page, '推荐口味', '清淡'); await submit(page)"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js",
+                        "column": 73,
+                        "line": 12
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: '生成推荐', exact: true })\nExpected: enabled\nReceived: disabled\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" getByRole('button', { name: '生成推荐', exact: true }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '生成推荐', exact: true })\u001b[22m\n\u001b[2m    14 × locator resolved to <button disabled type=\"button\" data-v-9cfd9dba=\"\" aria-disabled=\"true\" class=\"el-button el-button--primary is-disabled apply-button\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"disabled\"\u001b[22m\n\n\n  10 |   page.on('pageerror', error => { throw error })\n  11 |   await page.goto('/recommend')\n> 12 |   await expect(page.getByRole('button', { name: '生成推荐', exact: true })).toBeEnabled()\n     |                                                                         ^\n  13 | })\n  14 | test('口味变化清除旧结果并更新实际排序', async ({ page }) => {\n  15 |   await select(page, '推荐口味', '清淡'); await submit(page)\n    at E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js:12:73"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T07:27:45.271Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\recommend-推荐结果移动视口无横向溢出\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\recommend-推荐结果移动视口无横向溢出\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\校园美食推荐助手\\frontend\\test-results\\recommend-推荐结果移动视口无横向溢出\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "E:\\校园美食推荐助手\\frontend\\tests\\e2e\\recommend.spec.js",
+                    "column": 73,
+                    "line": 12
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0fdee04e2674eafcfcd8-927a42fcd8b6bb76ef85",
+          "file": "recommend.spec.js",
+          "line": 61,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-09T07:25:00.247Z",
+    "duration": 172034.638,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 23,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,5 @@
+
+  VITE v7.3.7  ready in 619 ms
+
+  ➜  Local:   http://127.0.0.1:5174/
+16:17:13 [vite] (client) hmr update /src/views/Recommend.vue?vue&type=style&index=0&scoped=9cfd9dba&lang.css
